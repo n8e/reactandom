@@ -1,7 +1,5 @@
 import React from 'react';
 
-require('./Order.less');
-
 class Order extends React.Component {
   constructor(props) {
     super(props);

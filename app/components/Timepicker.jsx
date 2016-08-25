@@ -1,7 +1,5 @@
 import React from 'react';
 
-require("./Timepicker.less");
-
 const pad = (value) => value < 10 ? '0' + value.toString() : value.toString();
 
 const hours = () => {
