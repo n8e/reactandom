@@ -1,5 +1,9 @@
 import React from 'react';
 import Timepicker from "./components/timepicker/Timepicker.jsx";
+import Order from './components/orderform/Order.jsx';
+import Footer from './components/Footer.js';
+import AddTodo from './containers/AddTodo';
+import VisibleTodoList from './containers/VisibleTodoList';
 import { Link } from 'react-router';
 
 require("./style.less");
@@ -29,12 +33,15 @@ class App extends React.Component {
   render() {
     return (
       <div className="Timer">
-        <Link to="/order">Order Form</Link>
         <p>
           Pick your time {this.state.selectedTime.hour}:{this.state.selectedTime.minute} {this.state.selectedTime.meridiem}!!!
         </p>
         <div>
+          <Order />
           <Timepicker time={this.state.selectedTime} onChange={this.onChangeTime} onClick={this.onChangeMeridiem} />
+	        <AddTodo />
+   	      <VisibleTodoList />
+          <Footer />
         </div>
       </div>
     );
