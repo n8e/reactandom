@@ -24,7 +24,7 @@ class Timepicker extends React.Component {
   constructor(props) {
     super(props);
   }
-  
+
   renderTime(list) {
     return list.map(function(timeValue) {
       return (
