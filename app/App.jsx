@@ -1,5 +1,5 @@
 import React from 'react';
-import Timepicker from "./timepicker/Timepicker.jsx";
+import Timepicker from "./components/timepicker/Timepicker.jsx";
 import { Link } from 'react-router';
 
 require("./style.less");
