@@ -1,5 +1,5 @@
 # reactandom
-Simple ReactJS app(ReactDOM and React-router) to learn about components, state, props, webpack
+Simple ReactJS app(ReactDOM and React-Redux) to learn about components, state, props, webpack
 
 ##steps
 1. Clone the repository ```git clone https://github.com/andela-nmartin/reactandom```
