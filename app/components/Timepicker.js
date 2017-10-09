@@ -21,6 +21,16 @@ const minutes = () => {
 class Timepicker extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      needRender: false,
+    }
+
+    this.renderTime = this.renderTime.bind(this);
+    this.needRenderFunction = this.needRenderFunction.bind(this);
+  }
+
+  needRenderFunction() {
+    this.setState({needRender: true});
   }
 
   renderTime(list) {
@@ -32,6 +42,7 @@ class Timepicker extends React.Component {
   }
 
   render() {
+    console.log('RE RENDERING');
     const selectedMeridiem = this.props.time.meridiem;
     const selectedButtonStyle = function(meridiem) {
       const isSelected = selectedMeridiem === meridiem;
